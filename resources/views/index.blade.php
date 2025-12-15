@@ -40,8 +40,9 @@
                 <i class="bi bi-list"></i>
             </button>
 
-            <a class="navbar-brand" href="#">
-                <i class="bi bi-basket me-2"></i> {{ config('app.name') }}
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="{{ asset('images/panexpres-logo.png') }}" alt="{{ config('app.name') }}" height="34"
+                    class="me-2">
             </a>
 
             <!-- Barra de búsqueda -->
