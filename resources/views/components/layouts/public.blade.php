@@ -55,6 +55,7 @@
                     <i class="bi bi-basket"></i>
                     <span class="cart-badge badge bg-danger rounded-pill">3</span>
                 </a>
+
             </div>
         </div>
     </nav>
