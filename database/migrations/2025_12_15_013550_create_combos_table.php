@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->decimal('price', 8, 2)->nullable(); // optional set price for combo
+            $table->string('slug')->unique();
+            $table->string('image')->nullable();
             $table->enum('discount_type', ['percent', 'fixed'])->nullable();
             $table->decimal('discount_value', 8, 2)->nullable();
             $table->boolean('is_active')->default(true);

@@ -8,15 +8,21 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use App\Models\Product;
 use App\Models\Bakery;
+use Spatie\Sluggable\HasSlug;
+use Spatie\Sluggable\SlugOptions;
 
 class Combo extends Model
 {
     use HasFactory;
+    use HasSlug;
+
     protected $fillable = [
         'bakery_id',
         'name',
         'description',
         'price',
+        'slug',
+        'image',
         'discount_type',
         'discount_value',
         'is_active',
@@ -32,6 +38,16 @@ class Combo extends Model
         return $this->belongsToMany(Product::class, 'combo_product')
             ->withPivot(['quantity', 'price_override'])
             ->withTimestamps();
+    }
+
+    public function getSlugOptions(): SlugOptions
+    {
+        return SlugOptions::create()
+            ->generateSlugsFrom('name')
+            ->saveSlugsTo('slug')
+            ->usingSeparator('-')
+            ->preventOverwrite()
+            ->doNotGenerateSlugsOnUpdate();
     }
 
     /**
