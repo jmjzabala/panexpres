@@ -23,4 +23,10 @@ class Product extends Model
     {
         return $this->belongsTo(Bakery::class);
     }
+
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class, 'category_product')
+            ->withTimestamps();
+    }
 }

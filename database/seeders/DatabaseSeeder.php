@@ -26,5 +26,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             BakerySeeder::class,
         ]);
+        // Seed categories and attach to products
+        $this->call([
+            CategoriesSeeder::class,
+        ]);
     }
 }
