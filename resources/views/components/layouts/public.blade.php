@@ -21,6 +21,20 @@
                     class="me-2">
             </a>
 
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Vende desde acá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aliados</a>
+                    </li>
+                </ul>
+            </div>
+
             <!-- Barra de búsqueda -->
             <div class="d-none d-md-flex flex-grow-1 mx-3">
                 <div class="input-group">
@@ -207,8 +221,7 @@
                     <p class="text-white-50">Recetas, descuentos y novedades del mundo del pan.</p>
                     <div class="input-group">
                         <input type="email" class="form-control" placeholder="tu@email.com">
-                        <button class="btn text-white" type="button"
-                            style="background-color: var(--accent-color);">Suscribirse</button>
+                        <button class="btn btn-primary" type="button">Suscribirse</button>
                     </div>
                 </div>
             </div>
@@ -261,7 +274,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Seguir
                         comprando</button>
-                    <button type="button" class="btn text-white" style="background-color: var(--primary-color);">Ir
+                    <button type="button" class="btn btn-primary">Ir
                         a pagar</button>
                 </div>
             </div>
