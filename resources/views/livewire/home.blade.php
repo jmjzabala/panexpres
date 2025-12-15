@@ -39,29 +39,7 @@
     <!-- Filtros móviles -->
     <div class="row mb-4">
         <div class="col-12">
-            <div class="categories-scroll">
-                <button class="btn btn-outline-primary rounded-pill category-btn active">Todos</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Recién horneado</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Tradicional</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Integral</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Sin gluten</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Bollería</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Ofertas</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn active">Todos</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Recién horneado</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Tradicional</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Integral</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Sin gluten</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Bollería</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Ofertas</button>
-                <button class="btn btn-outline-primary rounded-pill active">Todos</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn category-btn">Recién horneado</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Tradicional</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Integral</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Sin gluten</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Bollería</button>
-                <button class="btn btn-outline-primary rounded-pill category-btn">Ofertas</button>
-            </div>
+            <livewire:categories-scroll />
         </div>
     </div>
 
