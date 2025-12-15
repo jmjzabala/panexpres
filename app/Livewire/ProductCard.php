@@ -16,7 +16,7 @@ class ProductCard extends Component
 
     public function addToCart()
     {
-        $this->emit('productAddedToCart', $this->product->id);
+        $this->dispatch('productAddedToCart', productId: $this->product->id);
     }
 
     public function render()

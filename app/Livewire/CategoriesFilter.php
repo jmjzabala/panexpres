@@ -10,10 +10,6 @@ class CategoriesFilter extends Component
     public $categories;
     public $selectedCategoryId = 0;
 
-    protected $listeners = [
-        'categorySelected' => 'onCategorySelected',
-    ];
-
     public function mount()
     {
         $this->categories = Category::orderBy('name')->limit(20)->get();
@@ -22,12 +18,7 @@ class CategoriesFilter extends Component
     public function select(int $id)
     {
         $this->selectedCategoryId = $id;
-    }
-
-    public function onCategorySelected($id)
-    {
-        $this->selectedCategoryId = $id ?: 0;
-        $this->emit('categorySelected', $id);
+        $this->dispatch('categorySelected', categoryId: $id);
     }
 
     public function render()

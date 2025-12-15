@@ -3,20 +3,16 @@
 namespace App\Livewire;
 
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 #[Layout('layouts.public')]
 class Home extends Component
 {
-    protected $listeners = [
-        'categorySelected' => 'onCategorySelected',
-    ];
-
+    #[On('categorySelected')]
     public function onCategorySelected($categoryId)
     {
-        // dd($categoryId);
-        // Re-emit the selection specifically to the ProductList component so it filters accordingly.
-        $this->emitTo('product-list', 'categorySelected', $categoryId);
+        // received categorySelected via Livewire v3 dispatch API
     }
 
     public function render()

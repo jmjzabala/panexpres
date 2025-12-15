@@ -5,6 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Product;
+use Livewire\Attributes\On;
 
 class ProductList extends Component
 {
@@ -13,18 +14,14 @@ class ProductList extends Component
     public $perPage = 12;
     public $categoryId = null;
 
-    protected $listeners = [
-        'categorySelected' => 'onCategorySelected',
-    ];
-
     public function mount()
     {
         $this->resetPage();
     }
 
+    #[On('categorySelected')]
     public function onCategorySelected($categoryId)
     {
-        dd($categoryId);
         $this->categoryId = $categoryId ?: null;
         $this->resetPage();
     }
