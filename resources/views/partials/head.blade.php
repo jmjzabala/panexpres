@@ -23,7 +23,7 @@
 
 <style>
     :root {
-        --primary-color: #8B4513;
+        --primary-color: #873E07;
         --light-color: #FFF8DC;
         --dark-color: #5C4033;
     }

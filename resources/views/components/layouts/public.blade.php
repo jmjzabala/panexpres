@@ -11,8 +11,8 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <!-- Botón para abrir sidebar -->
-            <button class="btn btn-outline-primary me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
-                style="border-color: var(--primary-color); color: var(--primary-color);">
+            <button class="btn btn-outline-primary me-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#sidebar">
                 <i class="bi bi-list"></i>
             </button>
 
@@ -169,9 +169,10 @@
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <h5 class="fw-bold">
-                        <i class="bi bi-basket me-2"></i>{{ config('app.name') }}
+                        <img src="{{ asset('images/panexpres_logo_blanco.png') }}" alt="{{ config('app.name') }}"
+                            height="34" class="me-2 align-middle">
                     </h5>
-                    <p class="text-white-50">Conectamos panaderías artesanales con amantes del buen pan. Frescura,
+                    <p class="text-white-50">Conectamos panaderías con amantes del buen pan. Frescura,
                         calidad y tradición en cada pedido.</p>
                     <div class="d-flex">
                         <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
