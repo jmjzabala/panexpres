@@ -112,7 +112,7 @@
                             <span class="product-old-price">$5.00</span>
                         </div>
                         <button class="btn btn-primary btn-add-to-cart w-100">
-                            <i class="bi bi-basket me-2"></i> Agregar al canasto
+                            <i class="bi bi-basket me-2"></i> Agregar a la cesta
                         </button>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                             <span class="product-price">$5.25</span>
                         </div>
                         <button class="btn btn-primary btn-add-to-cart w-100">
-                            <i class="bi bi-basket me-2"></i> Agregar al canasto
+                            <i class="bi bi-basket me-2"></i> Agregar a la cesta
                         </button>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                             <span class="product-old-price">$7.65</span>
                         </div>
                         <button class="btn btn-primary btn-add-to-cart w-100">
-                            <i class="bi bi-basket me-2"></i> Agregar al canasto
+                            <i class="bi bi-basket me-2"></i> Agregar a la cesta
                         </button>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
                             <span class="product-price">$3.75</span>
                         </div>
                         <button class="btn btn-primary btn-add-to-cart w-100">
-                            <i class="bi bi-basket me-2"></i> Agregar al canasto
+                            <i class="bi bi-basket me-2"></i> Agregar a la cesta
                         </button>
                     </div>
                 </div>
@@ -222,7 +222,7 @@
                             <span class="product-price">$8.99</span>
                         </div>
                         <button class="btn btn-primary btn-add-to-cart w-100">
-                            <i class="bi bi-basket me-2"></i> Agregar al canasto
+                            <i class="bi bi-basket me-2"></i> Agregar a la cesta
                         </button>
                     </div>
                 </div>
@@ -251,7 +251,7 @@
                             <span class="product-old-price">$6.50</span>
                         </div>
                         <button class="btn btn-primary btn-add-to-cart w-100">
-                            <i class="bi bi-basket me-2"></i> Agregar al canasto
+                            <i class="bi bi-basket me-2"></i> Agregar a la cesta
                         </button>
                     </div>
                 </div>
@@ -278,7 +278,7 @@
                             <span class="product-price">$5.80</span>
                         </div>
                         <button class="btn btn-primary btn-add-to-cart w-100">
-                            <i class="bi bi-basket me-2"></i> Agregar al canasto
+                            <i class="bi bi-basket me-2"></i> Agregar a la cesta
                         </button>
                     </div>
                 </div>
@@ -305,7 +305,7 @@
                             <span class="product-price">$7.25</span>
                         </div>
                         <button class="btn btn-primary btn-add-to-cart w-100">
-                            <i class="bi bi-basket me-2"></i> Agregar al canasto
+                            <i class="bi bi-basket me-2"></i> Agregar a la cesta
                         </button>
                     </div>
                 </div>
