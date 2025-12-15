@@ -16,7 +16,7 @@
                 <i class="bi bi-list"></i>
             </button>
 
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="/">
                 <img src="{{ asset('images/panexpres_logo.png') }}" alt="{{ config('app.name') }}" height="34"
                     class="me-2">
             </a>
@@ -63,9 +63,8 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
         <div class="offcanvas-header sidebar-header">
             <div>
-                <h5 class="offcanvas-title mb-1">
-                    <i class="bi bi-basket me-2"></i>{{ config('app.name') }}
-                </h5>
+                <img src="{{ asset('images/panexpres_logo_blanco.png') }}" alt="{{ config('app.name') }}" height="34"
+                    class="me-2">
                 <p class="text-white-50 small mb-0">Tu mercado de pan artesanal</p>
             </div>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
