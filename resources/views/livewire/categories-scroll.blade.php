@@ -1,8 +1,9 @@
 <div class="categories-scroll">
-    <button class="btn btn-outline-primary rounded-pill category-btn active">Todos</button>
+    <button wire:click="select(0)"
+        class="btn btn-outline-primary rounded-pill category-btn {{ $selectedCategoryId === 0 ? 'active' : '' }}">Todos</button>
 
     @foreach ($categories as $category)
-        <button class="btn btn-outline-primary rounded-pill category-btn">{{ $category->name }}</button>
+        <button wire:click="select({{ $category->id }})"
+            class="btn btn-outline-primary rounded-pill category-btn {{ $selectedCategoryId === $category->id ? 'active' : '' }}">{{ $category->name }}</button>
     @endforeach
-
 </div>
