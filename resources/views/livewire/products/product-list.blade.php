@@ -45,10 +45,11 @@
             </nav>
         </div>
     </div>
-
+</div>
+@push('scripts')
     <script>
         (function() {
-            // Focus the product list container and scroll it 100px from top when triggered
+            // Focus the product list container and scroll it 200px from top when triggered
             window.addEventListener('focus-product-list', function() {
                 try {
                     const el = document.getElementById('product-list');
@@ -77,4 +78,4 @@
             });
         })();
     </script>
-</div>
+@endpush
