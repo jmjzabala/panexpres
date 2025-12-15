@@ -88,6 +88,15 @@ body {
   color: white;
 }
 
+/* Product list */
+.product-list {
+  .product-list-focused {
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.12);
+    border-radius: 6px;
+    transition: box-shadow 0.25s ease-in-out;
+  }
+}
+
 /* Product cards */
 .product-card {
   transition: transform 0.3s, box-shadow 0.3s;

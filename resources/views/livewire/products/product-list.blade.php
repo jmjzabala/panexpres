@@ -1,4 +1,4 @@
-<div>
+<div id="product-list" class="product-list" tabindex="-1">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div>
             <small class="text-muted">Mostrando {{ $products->firstItem() ?: 0 }} - {{ $products->lastItem() ?: 0 }} de
@@ -45,4 +45,36 @@
             </nav>
         </div>
     </div>
+
+    <script>
+        (function() {
+            // Focus the product list container and scroll it 100px from top when triggered
+            window.addEventListener('focus-product-list', function() {
+                try {
+                    const el = document.getElementById('product-list');
+                    if (!el) return;
+
+                    // focus without scrolling (we will control scroll)
+                    el.focus({
+                        preventScroll: true
+                    });
+
+                    // compute target so element's top sits 100px below viewport top
+                    const rect = el.getBoundingClientRect();
+                    const target = Math.max(0, window.scrollY + rect.top - 200);
+
+                    window.scrollTo({
+                        top: target,
+                        behavior: 'smooth'
+                    });
+
+                    // add visual indicator briefly
+                    el.classList.add('product-list-focused');
+                    setTimeout(() => el.classList.remove('product-list-focused'), 1200);
+                } catch (e) {
+                    // silent
+                }
+            });
+        })();
+    </script>
 </div>
