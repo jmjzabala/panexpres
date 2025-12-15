@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('bakery_id')->constrained('bakeries')->onDelete('cascade');
             $table->string('name');
             $table->text('description')->nullable();
+            $table->string('slug')->unique();
             $table->decimal('price', 8, 2);
             $table->string('image')->nullable();
             $table->integer('stock')->default(0);
