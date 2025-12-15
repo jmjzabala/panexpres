@@ -183,15 +183,6 @@
     <script>
         // Funcionalidad básica para la página
         document.addEventListener('DOMContentLoaded', function() {
-            // Activar categorías al hacer clic
-            // const categoryButtons = document.querySelectorAll('.category-btn');
-            // categoryButtons.forEach(button => {
-            //     button.addEventListener('click', function() {
-            //         categoryButtons.forEach(btn => btn.classList.remove('active'));
-            //         this.classList.add('active');
-            //     });
-            // });
-
             // Agregar productos al carrito
             const addToCartButtons = document.querySelectorAll('.btn-add-to-cart');
             const cartBadge = document.querySelector('.cart-badge');
