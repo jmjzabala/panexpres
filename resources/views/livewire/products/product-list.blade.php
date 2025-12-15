@@ -6,9 +6,9 @@
         </div>
         <div>
             <select wire:model.live="perPage" class="form-select form-select-sm">
-                <option value="6">6 por página</option>
+                <option value="8">8 por página</option>
                 <option value="12">12 por página</option>
-                <option value="24">24 por página</option>
+                <option value="20">20 por página</option>
             </select>
         </div>
     </div>
