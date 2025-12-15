@@ -17,7 +17,7 @@
             </button>
 
             <a class="navbar-brand" href="#">
-                <i class="bi bi-basket me-2"></i> PanMarket
+                <i class="bi bi-basket me-2"></i> {{ config('app.name') }}
             </a>
 
             <!-- Barra de búsqueda -->
@@ -53,7 +53,7 @@
         <div class="offcanvas-header sidebar-header">
             <div>
                 <h5 class="offcanvas-title mb-1">
-                    <i class="bi bi-basket me-2"></i>PanMarket
+                    <i class="bi bi-basket me-2"></i>{{ config('app.name') }}
                 </h5>
                 <p class="text-white-50 small mb-0">Tu mercado de pan artesanal</p>
             </div>
@@ -137,7 +137,7 @@
             <!-- Información adicional -->
             <div class="p-3 border-top border-secondary">
                 <small class="text-white-50">
-                    &copy; 2023 PanMarket. Hecho con ❤️ y harina.
+                    &copy; 2023 {{ config('app.name') }}. Hecho con ❤️ y harina.
                 </small>
             </div>
         </div>
@@ -157,7 +157,7 @@
                 </div>
             </div>
         </div>
-                
+
         {{ $slot }}
     </main>
 
@@ -168,7 +168,7 @@
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <h5 class="fw-bold">
-                        <i class="bi bi-basket me-2"></i>PanMarket
+                        <i class="bi bi-basket me-2"></i>{{ config('app.name') }}
                     </h5>
                     <p class="text-white-50">Conectamos panaderías artesanales con amantes del buen pan. Frescura,
                         calidad y tradición en cada pedido.</p>
@@ -213,7 +213,7 @@
 
             <div class="row pt-3 border-top border-secondary">
                 <div class="col-md-6 text-center text-md-start">
-                    <small class="text-white-50">&copy; 2023 PanMarket. Hecho con ❤️ y harina.</small>
+                    <small class="text-white-50">&copy; 2023 {{ config('app.name') }}. Hecho con ❤️ y harina.</small>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <small class="text-white-50">
