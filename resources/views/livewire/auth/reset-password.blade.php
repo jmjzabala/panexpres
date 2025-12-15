@@ -1,51 +1,47 @@
 <x-layouts.auth>
-    <div class="flex flex-col gap-6">
-        <x-auth-header :title="__('Reset password')" :description="__('Please enter your new password below')" />
+    <div>
+        <div class="text-center mb-3">
+            <h1 class="h4 fw-bold">{{ __('Restablecer contraseña') }}</h1>
+            <p class="text-muted mb-0">{{ __('Por favor ingresa tu nueva contraseña') }}</p>
+        </div>
 
-        <!-- Session Status -->
-        <x-auth-session-status class="text-center" :status="session('status')" />
+        @if (session('status'))
+            <div class="alert alert-success text-center" role="alert">{{ session('status') }}</div>
+        @endif
 
-        <form method="POST" action="{{ route('password.update') }}" class="flex flex-col gap-6">
+        <form method="POST" action="{{ route('password.update') }}">
             @csrf
             <!-- Token -->
             <input type="hidden" name="token" value="{{ request()->route('token') }}">
 
-            <!-- Email Address -->
-            <flux:input
-                name="email"
-                value="{{ request('email') }}"
-                :label="__('Email')"
-                type="email"
-                required
-                autocomplete="email"
-            />
+            <div class="form-floating mb-3">
+                <input id="email" name="email" value="{{ request('email') }}" type="email"
+                    class="form-control @error('email') is-invalid @enderror" required autocomplete="email"
+                    placeholder="tu@ejemplo.com">
+                <label for="email">{{ __('Correo electrónico') }}</label>
+                @error('email')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
 
-            <!-- Password -->
-            <flux:input
-                name="password"
-                :label="__('Password')"
-                type="password"
-                required
-                autocomplete="new-password"
-                :placeholder="__('Password')"
-                viewable
-            />
+            <div class="form-floating mb-3">
+                <input id="password" name="password" type="password"
+                    class="form-control @error('password') is-invalid @enderror" required autocomplete="new-password"
+                    placeholder="{{ __('Contraseña') }}">
+                <label for="password">{{ __('Contraseña') }}</label>
+                @error('password')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
 
-            <!-- Confirm Password -->
-            <flux:input
-                name="password_confirmation"
-                :label="__('Confirm password')"
-                type="password"
-                required
-                autocomplete="new-password"
-                :placeholder="__('Confirm password')"
-                viewable
-            />
+            <div class="form-floating mb-3">
+                <input id="password_confirmation" name="password_confirmation" type="password" class="form-control"
+                    required autocomplete="new-password" placeholder="{{ __('Confirmar contraseña') }}">
+                <label for="password_confirmation">{{ __('Confirmar contraseña') }}</label>
+            </div>
 
-            <div class="flex items-center justify-end">
-                <flux:button type="submit" variant="primary" class="w-full" data-test="reset-password-button">
-                    {{ __('Reset password') }}
-                </flux:button>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">{{ __('Restablecer contraseña') }}</button>
             </div>
         </form>
     </div>

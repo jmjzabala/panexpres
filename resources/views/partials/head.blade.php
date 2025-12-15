@@ -33,7 +33,7 @@
         background-color: var(--light-color);
         color: var(--dark-color);
         margin: 0;
-        padding-top: 56px;
+        /* padding-top: 56px; */
     }
 
     .navbar-brand {

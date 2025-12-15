@@ -1,28 +1,24 @@
 <x-layouts.auth>
-    <div class="mt-4 flex flex-col gap-6">
-        <flux:text class="text-center">
-            {{ __('Please verify your email address by clicking on the link we just emailed to you.') }}
-        </flux:text>
+    <div class="mt-4">
+        <p class="text-center">
+            {{ __('Por favor verifica tu dirección de correo electrónico haciendo clic en el enlace que te acabamos de enviar.') }}
+        </p>
 
         @if (session('status') == 'verification-link-sent')
-            <flux:text class="text-center font-medium !dark:text-green-400 !text-green-600">
-                {{ __('A new verification link has been sent to the email address you provided during registration.') }}
-            </flux:text>
+            <div class="text-center fw-medium text-success">
+                {{ __('Se ha enviado un nuevo enlace de verificación a la dirección de correo electrónico que proporcionaste durante el registro.') }}
+            </div>
         @endif
 
-        <div class="flex flex-col items-center justify-between space-y-3">
-            <form method="POST" action="{{ route('verification.send') }}">
+        <div class="d-flex flex-column align-items-center gap-2 mt-3">
+            <form method="POST" action="{{ route('verification.send') }}" class="w-100 mb-2">
                 @csrf
-                <flux:button type="submit" variant="primary" class="w-full">
-                    {{ __('Resend verification email') }}
-                </flux:button>
+                <button type="submit" class="btn btn-primary w-100">{{ __('Reenviar correo de verificación') }}</button>
             </form>
 
-            <form method="POST" action="{{ route('logout') }}">
+            <form method="POST" action="{{ route('logout') }}" class="w-100">
                 @csrf
-               <flux:button variant="ghost" type="submit" class="text-sm cursor-pointer" data-test="logout-button">
-                    {{ __('Log out') }}
-                </flux:button>
+                <button type="submit" class="btn btn-link text-muted w-100">{{ __('Cerrar sesión') }}</button>
             </form>
         </div>
     </div>

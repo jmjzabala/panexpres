@@ -41,7 +41,7 @@
             </button>
 
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="{{ asset('images/panexpres-logo.png') }}" alt="{{ config('app.name') }}" height="34"
+                <img src="{{ asset('images/panexpres_logo.png') }}" alt="{{ config('app.name') }}" height="34"
                     class="me-2">
             </a>
 

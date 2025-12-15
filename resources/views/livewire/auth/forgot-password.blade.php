@@ -1,31 +1,36 @@
 <x-layouts.auth>
-    <div class="flex flex-col gap-6">
-        <x-auth-header :title="__('Forgot password')" :description="__('Enter your email to receive a password reset link')" />
+    <div>
+        <div class="text-center mb-3">
+            <h1 class="h4 fw-bold">{{ __('¿Olvidaste tu contraseña?') }}</h1>
+            <p class="text-muted mb-0">
+                {{ __('Ingresa tu correo para recibir un enlace de restablecimiento de contraseña') }}</p>
+        </div>
 
-        <!-- Session Status -->
-        <x-auth-session-status class="text-center" :status="session('status')" />
+        @if (session('status'))
+            <div class="alert alert-success text-center" role="alert">{{ session('status') }}</div>
+        @endif
 
-        <form method="POST" action="{{ route('password.email') }}" class="flex flex-col gap-6">
+        <form method="POST" action="{{ route('password.email') }}">
             @csrf
 
-            <!-- Email Address -->
-            <flux:input
-                name="email"
-                :label="__('Email Address')"
-                type="email"
-                required
-                autofocus
-                placeholder="email@example.com"
-            />
+            <div class="form-floating mb-3">
+                <input id="email" name="email" type="email"
+                    class="form-control @error('email') is-invalid @enderror" required autofocus
+                    placeholder="tu@ejemplo.com">
+                <label for="email">{{ __('Correo electrónico') }}</label>
+                @error('email')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
 
-            <flux:button variant="primary" type="submit" class="w-full" data-test="email-password-reset-link-button">
-                {{ __('Email password reset link') }}
-            </flux:button>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">{{ __('Enviar enlace de restablecimiento') }}</button>
+            </div>
         </form>
 
-        <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-400">
-            <span>{{ __('Or, return to') }}</span>
-            <flux:link :href="route('login')" wire:navigate>{{ __('log in') }}</flux:link>
+        <div class="text-center mt-3 small text-muted">
+            <span>{{ __('O regresar a') }}</span>
+            <a href="{{ route('login') }}">{{ __('Iniciar sesión') }}</a>
         </div>
     </div>
 </x-layouts.auth>
