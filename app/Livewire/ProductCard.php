@@ -21,6 +21,6 @@ class ProductCard extends Component
 
     public function render()
     {
-        return view('livewire.product-card');
+        return view('livewire.products.product-card');
     }
 }
