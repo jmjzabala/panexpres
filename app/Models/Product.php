@@ -17,6 +17,8 @@ class Product extends Model
         'image',
         'stock',
         'is_active',
+        'discount',
+        'old_price',
     ];
 
     public function bakery()

@@ -90,6 +90,11 @@
 
     <!-- Grid de productos -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        @foreach ($products as $product)
+            <div class="col">
+                <livewire:product-card :product="$product" :wire:key="'product-'.$product->id" />
+            </div>
+        @endforeach
         <!-- Producto 1 -->
         <div class="col">
             <div class="card product-card h-100">
