@@ -40,13 +40,27 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="categories-scroll">
-                <button class="category-btn active">Todos</button>
-                <button class="category-btn">Recién horneado</button>
-                <button class="category-btn">Tradicional</button>
-                <button class="category-btn">Integral</button>
-                <button class="category-btn">Sin gluten</button>
-                <button class="category-btn">Bollería</button>
-                <button class="category-btn">Ofertas</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn active">Todos</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Recién horneado</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Tradicional</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Integral</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Sin gluten</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Bollería</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Ofertas</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn active">Todos</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Recién horneado</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Tradicional</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Integral</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Sin gluten</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Bollería</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Ofertas</button>
+                <button class="btn btn-outline-primary rounded-pill active">Todos</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn category-btn">Recién horneado</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Tradicional</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Integral</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Sin gluten</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Bollería</button>
+                <button class="btn btn-outline-primary rounded-pill category-btn">Ofertas</button>
             </div>
         </div>
     </div>
@@ -74,7 +88,7 @@
                             1952 con recetas familiares.</p>
                     </div>
                     <div class="col-md-3 text-center text-md-end">
-                        <button class="btn btn-panaderia mb-2">
+                        <button class="btn btn-success btn-panaderia mb-2">
                             <i class="bi bi-shop me-2"></i> Ver tienda
                         </button>
                         <div class="text-success small">
