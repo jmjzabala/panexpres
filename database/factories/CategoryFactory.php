@@ -13,7 +13,6 @@ class CategoryFactory extends Factory
     {
         return [
             'name' => ucfirst($this->faker->unique()->word),
-            'slug' => null,
             'description' => $this->faker->sentence(6),
             'image' => 'https://placehold.co/100x100?text=CAT',
             'item_menu' => '0',

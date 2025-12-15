@@ -12,7 +12,7 @@ class BakeryFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->company . ' Panadería',
+            'name' => 'Panadería ' . $this->faker->company,
             'description' => $this->faker->sentence(10),
             'logo' => null,
             'address' => $this->faker->address,

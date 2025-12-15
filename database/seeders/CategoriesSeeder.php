@@ -24,7 +24,7 @@ class CategoriesSeeder extends Seeder
         foreach ($names as $name) {
             $categories->push(Category::firstOrCreate(['name' => $name], [
                 'description' => "Categoría {$name}",
-                'image' => 'https://placehold.co/400x300?text=' . urlencode($name),
+                'image' => 'https://placehold.co/100x100?text=' . urlencode($name),
             ]));
         }
 
