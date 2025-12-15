@@ -8,7 +8,7 @@
                         <h1 class="display-6 fw-bold">Pan fresco cada día</h1>
                         <p class="lead">Descubre las mejores panaderías artesanales de tu ciudad. Pan recién
                             horneado directamente a tu mesa.</p>
-                        <button class="btn btn-lg text-white mt-2" style="background-color: var(--accent-color);">
+                        <button class="btn btn-lg btn-secondary text-white mt-2">
                             <i class="bi bi-geo-alt me-2"></i> Encuentra panaderías cerca
                         </button>
                     </div>
@@ -337,7 +337,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3"
-                            style="width: 50px; height: 50px; background-color: var(--accent-color) !important;">
+                            style="width: 50px; height: 50px;">
                             <i class="bi bi-shop text-white fs-4"></i>
                         </div>
                         <div>
@@ -362,7 +362,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3"
-                            style="width: 50px; height: 50px; background-color: var(--accent-color) !important;">
+                            style="width: 50px; height: 50px;">
                             <i class="bi bi-shop text-white fs-4"></i>
                         </div>
                         <div>
@@ -387,7 +387,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3"
-                            style="width: 50px; height: 50px; background-color: var(--accent-color) !important;">
+                            style="width: 50px; height: 50px;">
                             <i class="bi bi-shop text-white fs-4"></i>
                         </div>
                         <div>
