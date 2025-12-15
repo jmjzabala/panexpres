@@ -39,7 +39,7 @@
     <!-- Filtros móviles -->
     <div class="row mb-4">
         <div class="col-12">
-            <livewire:categories-scroll />
+            <livewire:categories-filter />
         </div>
     </div>
 

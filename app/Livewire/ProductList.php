@@ -24,6 +24,7 @@ class ProductList extends Component
 
     public function onCategorySelected($categoryId)
     {
+        dd($categoryId);
         $this->categoryId = $categoryId ?: null;
         $this->resetPage();
     }
