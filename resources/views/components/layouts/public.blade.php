@@ -156,7 +156,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="text-center">Tu canasto tiene 3 productos</p>
+                    <p class="text-center">Tu cesta tiene 3 productos</p>
                     <ul class="list-group">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Pan de masa madre
