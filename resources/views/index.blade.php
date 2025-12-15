@@ -159,7 +159,7 @@
             <!-- Información adicional -->
             <div class="p-3 border-top border-secondary">
                 <small class="text-white-50">
-                    &copy; 2023 {{ config('app.name') }}. Hecho con ❤️ y harina.
+                    &copy; 2025 {{ config('app.name') }}. Hecho con ❤️ y harina.
                 </small>
             </div>
         </div>
@@ -660,7 +660,7 @@
 
             <div class="row pt-3 border-top border-secondary">
                 <div class="col-md-6 text-center text-md-start">
-                    <small class="text-white-50">&copy; 2023 {{ config('app.name') }}. Hecho con ❤️ y harina.</small>
+                    <small class="text-white-50">&copy; 2025 {{ config('app.name') }}. Hecho con ❤️ y harina.</small>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <small class="text-white-50">
