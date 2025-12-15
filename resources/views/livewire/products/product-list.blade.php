@@ -5,7 +5,7 @@
                 {{ $products->total() }}</small>
         </div>
         <div>
-            <select wire:model="perPage" class="form-select form-select-sm">
+            <select wire:model.live="perPage" class="form-select form-select-sm">
                 <option value="6">6 por página</option>
                 <option value="12">12 por página</option>
                 <option value="24">24 por página</option>
