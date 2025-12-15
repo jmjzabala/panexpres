@@ -23,6 +23,6 @@ class CategoryNav extends Component
 
     public function render()
     {
-        return view('components.layouts.sidebar.category-nav');
+        return view('livewire.sidebar.category-nav');
     }
 }
