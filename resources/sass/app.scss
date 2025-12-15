@@ -13,6 +13,16 @@ $danger: #dc143c; // Color rojo para errores
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+/* Mapeo de variables SCSS a variables CSS y ajustes de Bootstrap CSS vars */
+:root {
+  --primary-color: #{$primary};
+  --secondary-color: #{$secondary};
+  --accent-color: #{$accent};
+  --light-color: #{$light};
+  --dark-color: #{$dark};
+  --bs-tertiary-bg: #f9f3e9;
+}
+
 /* Variables */
 // @import "variables";
 

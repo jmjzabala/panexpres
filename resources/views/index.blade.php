@@ -58,10 +58,7 @@
 
             <!-- Iconos de usuario y carrito -->
             <div class="d-flex">
-                <a href="#" class="btn btn-outline-dark position-relative me-2 d-none d-md-inline-block"
-                    style="border-color: var(--primary-color); color: var(--primary-color);">
-                    <i class="bi bi-person"></i>
-                </a>
+                <livewire:user-menu />
 
                 <a href="#" class="btn btn-outline-dark position-relative" data-bs-toggle="modal"
                     data-bs-target="#cartModal"

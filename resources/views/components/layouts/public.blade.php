@@ -48,14 +48,10 @@
 
             <!-- Iconos de usuario y carrito -->
             <div class="d-flex">
-                <a href="#" class="btn btn-outline-primary position-relative me-2 d-none d-md-inline-block"
-                    style="">
-                    <i class="bi bi-person"></i>
-                </a>
+                <livewire:user-menu />
 
                 <a href="#" class="btn btn-outline-primary position-relative" data-bs-toggle="modal"
-                    data-bs-target="#cartModal"
-                    style="border-color: var(--primary-color); color: var(--primary-color);">
+                    data-bs-target="#cartModal">
                     <i class="bi bi-basket"></i>
                     <span class="cart-badge badge bg-danger rounded-pill">3</span>
                 </a>
@@ -246,7 +242,7 @@
             <div class="modal-content">
                 <div class="modal-header" style="background-color: var(--primary-color); color: white;">
                     <h5 class="modal-title">
-                        <i class="bi bi-basket me-2"></i>Mi Canasto
+                        <i class="bi bi-basket me-2"></i>Mi Cesta
                     </h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
