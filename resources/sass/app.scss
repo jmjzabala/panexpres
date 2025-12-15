@@ -1,0 +1,309 @@
+$primary: #8b4513;
+$secondary: #d2691e;
+// $success: #8fbc8f;
+$light: #fff8dc;
+$dark: #5c4033;
+
+// Colores personalizados adicionales
+$accent: #f4a460;
+$warning: #ffa500; // Color naranja para alertas/notificaciones
+$info: #87ceeb; // Color azul claro para información
+$danger: #dc143c; // Color rojo para errores
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* Variables */
+// @import "variables";
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  padding-top: 56px; /* Para el header fijo */
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+/* Sidebar personalizado */
+.offcanvas {
+  max-width: 300px;
+  background-color: $dark;
+  color: white;
+}
+
+.sidebar-header {
+  background-color: var(--primary-color);
+  padding: 1.5rem 1rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" width="100" height="20"><path d="M0,10 Q25,5 50,10 T100,10" stroke="%23F4A460" fill="none" stroke-width="2"/></svg>');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 80% 5px;
+}
+
+.sidebar-category {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 0;
+}
+
+.sidebar-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.sidebar-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-link.active {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+/* Header fijo */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary-color) !important;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  font-size: 0.6rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.badge-pan {
+  background-color: var(--success-color);
+  color: white;
+}
+
+/* Product cards */
+.product-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  border-top: 5px solid var(--accent-color);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product-img {
+  height: 180px;
+  object-fit: cover;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.product-price {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.product-old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.product-discount {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-add-to-cart {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-add-to-cart:hover,
+.btn-panaderia:hover,
+.btn:hover,
+.category-btn:hover {
+  background-color: var(--bs-btn-hover-bg) !important;
+  color: #fff !important;
+}
+
+.btn-panaderia {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.btn-panaderia:hover {
+  background-color: #7da97d;
+}
+
+/* Categorías móviles */
+.categories-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.categories-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.categories-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.category-btn {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  color: var(--dark-color);
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.category-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Panadería destacada */
+.panaderia-card {
+  background: linear-gradient(135deg, #fff 0%, #f9f3e9 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e9dcc9;
+}
+
+.panaderia-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-color);
+  background-color: white;
+}
+
+.rating {
+  color: #ffc107;
+}
+
+/* Hero section */
+.hero-section {
+  background: linear-gradient(rgba(92, 64, 51, 0.8), rgba(139, 69, 19, 0.9)),
+    url("https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  margin-top: 3rem;
+  border-top: 5px solid var(--accent-color);
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--accent-color);
+}
+
+/* Badge de artesanal */
+.artesanal-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  z-index: 10;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .product-img {
+    height: 200px;
+  }
+
+  .categories-scroll {
+    white-space: normal;
+    overflow-x: visible;
+  }
+
+  .hero-section {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-img {
+    height: 220px;
+  }
+}
+
+/* Animaciones */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Breadcrumb personalizado */
+.breadcrumb-pan {
+  background-color: #f5eee6;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.breadcrumb-pan .breadcrumb-item.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
