@@ -15,20 +15,22 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::firstOrCreate([
-            'email' => 'test@example.com',
+        /* User::firstOrCreate([
+            'email' => 'admin@panexpres.com',
         ], [
-            'name' => 'Test User',
+            'name' => 'Admin User',
             'password' => bcrypt('password'),
         ]);
 
         // Seed bakeries, products and combos
         $this->call([
             BakerySeeder::class,
-        ]);
+        ]); */
+
         // Seed categories and attach to products
         $this->call([
-            CategoriesSeeder::class,
+            // CategoriesSeeder::class,
+            RolesAndPermissionsSeeder::class,
         ]);
     }
 }

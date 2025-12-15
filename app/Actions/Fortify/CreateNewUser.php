@@ -6,6 +6,8 @@ use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
+use Illuminate\Support\Facades\Schema;
+use Spatie\Permission\Models\Role;
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -30,10 +32,19 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
         ])->validate();
 
-        return User::create([
+        $user = User::create([
             'name' => $input['name'],
             'email' => $input['email'],
             'password' => $input['password'],
         ]);
+
+        // Assign default role 'Cliente' if permission tables exist.
+        if (Schema::hasTable('roles')) {
+            // Ensure role exists and assign it. This is safe if migrations haven't run because of the check above.
+            $role = Role::firstOrCreate(['name' => 'Cliente']);
+            $user->assignRole($role);
+        }
+
+        return $user;
     }
 }
