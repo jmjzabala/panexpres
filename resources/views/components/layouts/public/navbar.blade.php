@@ -37,14 +37,12 @@
 
         <!-- Iconos de usuario y carrito -->
         <div class="d-flex">
-            <livewire:user-menu />
-
-            <a href="#" class="btn btn-outline-primary position-relative" data-bs-toggle="modal"
+            <a href="#" class="btn btn-outline-primary position-relative me-2" data-bs-toggle="modal"
                 data-bs-target="#cartModal">
                 <i class="bi bi-basket"></i>
                 <span class="cart-badge badge bg-danger rounded-pill">3</span>
             </a>
-
+            <livewire:navbar.user-menu />
         </div>
     </div>
 </nav>
